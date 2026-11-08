@@ -243,17 +243,17 @@ h2 {
   <div class="eyebrow">Прогресс разработки</div>
   <h2 style="margin-top:0;">Задачи в разработке — общая картина</h2>
   <div class="progress-row">
-    <div class="progress-track"><div class="progress-fill" style="width:86%;"></div></div>
-    <div class="progress-label">86% готово</div>
+    <div class="progress-track"><div class="progress-fill" style="width:87%;"></div></div>
+    <div class="progress-label">87% готово</div>
   </div>
   <div class="stat-grid">
-    <div class="stat-card"><span class="stat-label">готово</span><span class="stat-count">271</span></div>
+    <div class="stat-card"><span class="stat-label">готово</span><span class="stat-count">274</span></div>
     <div class="stat-card"><span class="stat-label">сейчас проверяем</span><span class="stat-count">1</span></div>
     <div class="stat-card"><span class="stat-label">спроектировано, готово к разработке</span><span class="stat-count">3</span></div>
-    <div class="stat-card"><span class="stat-label">в очереди, ещё не спроектировано</span><span class="stat-count">29</span></div>
+    <div class="stat-card"><span class="stat-label">в очереди, ещё не спроектировано</span><span class="stat-count">28</span></div>
     <div class="stat-card"><span class="stat-label">решили не делать</span><span class="stat-count">10</span></div>
   </div>
-  <div class="stats-footnote">Всего задач в трекере разработки: 314.</div>
+  <div class="stats-footnote">Всего задач в трекере разработки: 316.</div>
 
   <div class="eyebrow">Блокирует прогресс</div>
   <h2 style="margin-top:0;">Нужно от тебя</h2>
@@ -443,6 +443,10 @@ h2 {
   <div class="eyebrow">История обновлений</div>
   <h2 style="margin-top:0;">Что нового</h2>
   <ul class="changelog">
+    <li><span class="cl-date">2026-11-08</span><details>
+      <summary>Учли правки Даши по главному экрану: описания «Беременность по неделям», «Подготовка к родам» и «Полезные рекомендации» теперь укладываются в три строки (у «Беременности по неделям» добавлено слово «малыша»), у «Дневника беременности» новая подпись «Важные записи и события», у восьми карточек убраны стрелки. Баннер «Малыш родился!» собран на готовой подложке от Даши: текст «Расскажи о своём малыше, чтобы получить новый план заботы» и кнопка со стрелкой — такой же, как в блоке «Что важно на этой…</summary>
+      <div class="cl-rest">неделе?». Текст на баннере тёмно-фиолетовый, а не белый: на светлой подложке белый плохо читается.</div>
+    </details></li>
     <li><span class="cl-date">2026-11-08</span><div>Подготовили защиту от «потерянных» оплат Робокассы: если человек открыл оплату и закрыл страницу, платёж теперь не висит бесконечно — через 15 минут система пометит его брошенным, а если деньги всё-таки пришли, подписка включится сама, и человеку придёт сообщение «Подписка активна». На экране результата оплаты появилась кнопка проверки статуса. Эти проверки включатся вместе с боевым подключением Робокассы (MerchantLogin) — пока всё работает как раньше.</div></li>
     <li><span class="cl-date">2026-11-08</span><div>Исправили редкую ошибку в конце онбординга: если дважды быстро нажать кнопку завершения, у малыша могла создаться вторая лишняя карточка. Теперь профиль и карточки создаются ровно один раз, а повторное нажатие просто игнорируется. Случай с двойней и добавлением второго ребёнка работает как раньше.</div></li>
     <li><span class="cl-date">2026-11-08</span><div>Автоматические проверки перед каждым обновлением теперь охватывают и интерфейс приложения (Mini App и админку), а не только серверную часть: если что-то сломается в экранах, обновление на рабочую версию не пойдёт. Проверки перенесли на отдельный сервер, чтобы они не зависели от лимитов бесплатного тарифа.</div></li>
