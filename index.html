@@ -247,13 +247,13 @@ h2 {
     <div class="progress-label">85% готово</div>
   </div>
   <div class="stat-grid">
-    <div class="stat-card"><span class="stat-label">готово</span><span class="stat-count">257</span></div>
+    <div class="stat-card"><span class="stat-label">готово</span><span class="stat-count">261</span></div>
     <div class="stat-card"><span class="stat-label">сейчас проверяем</span><span class="stat-count">1</span></div>
     <div class="stat-card"><span class="stat-label">спроектировано, готово к разработке</span><span class="stat-count">3</span></div>
     <div class="stat-card"><span class="stat-label">в очереди, ещё не спроектировано</span><span class="stat-count">32</span></div>
     <div class="stat-card"><span class="stat-label">решили не делать</span><span class="stat-count">10</span></div>
   </div>
-  <div class="stats-footnote">Всего задач в трекере разработки: 303.</div>
+  <div class="stats-footnote">Всего задач в трекере разработки: 307.</div>
 
   <div class="eyebrow">Блокирует прогресс</div>
   <h2 style="margin-top:0;">Нужно от тебя</h2>
@@ -443,6 +443,7 @@ h2 {
   <div class="eyebrow">История обновлений</div>
   <h2 style="margin-top:0;">Что нового</h2>
   <ul class="changelog">
+    <li><span class="cl-date">2026-11-08</span><div>Автоматические проверки перед каждым обновлением теперь охватывают и интерфейс приложения (Mini App и админку), а не только серверную часть: если что-то сломается в экранах, обновление на рабочую версию не пойдёт. Проверки перенесли на отдельный сервер, чтобы они не зависели от лимитов бесплатного тарифа.</div></li>
     <li><span class="cl-date">2026-11-08</span><div>В админке снова можно загружать фото экспертов размером до нескольких мегабайт: раньше большие снимки не принимались. Если файл всё же слишком велик, админка теперь пишет понятное сообщение, а не общую ошибку.</div></li>
     <li><span class="cl-date">2026-11-07</span><div>Выгрузка дневника беременности в PDF теперь работает в Telegram: нажимаешь «Скачать», разрешаешь сохранение в окне Telegram — и файл появляется на устройстве (проверено на Android). Если сохранить не получилось, приложение честно скажет об этом и предложит повторить. Ссылка на файл действует недолго и привязана только к тебе, данные дневника посторонним недоступны.</div></li>
     <li><span class="cl-date">2026-11-06</span><div>Перенесли автоматические проверки кода на отдельный сервер, чтобы они не зависели от лимита бесплатных минут GitHub и не нагружали рабочий сервер приложения. Выкладка обновлений по-прежнему идёт только после успешных проверок. Для пользователей ничего не меняется.</div></li>
