@@ -243,17 +243,17 @@ h2 {
   <div class="eyebrow">Прогресс разработки</div>
   <h2 style="margin-top:0;">Задачи в разработке — общая картина</h2>
   <div class="progress-row">
-    <div class="progress-track"><div class="progress-fill" style="width:87%;"></div></div>
-    <div class="progress-label">87% готово</div>
+    <div class="progress-track"><div class="progress-fill" style="width:90%;"></div></div>
+    <div class="progress-label">90% готово</div>
   </div>
   <div class="stat-grid">
-    <div class="stat-card"><span class="stat-label">готово</span><span class="stat-count">288</span></div>
+    <div class="stat-card"><span class="stat-label">готово</span><span class="stat-count">299</span></div>
     <div class="stat-card"><span class="stat-label">сейчас проверяем</span><span class="stat-count">1</span></div>
     <div class="stat-card"><span class="stat-label">спроектировано, готово к разработке</span><span class="stat-count">3</span></div>
-    <div class="stat-card"><span class="stat-label">в очереди, ещё не спроектировано</span><span class="stat-count">29</span></div>
+    <div class="stat-card"><span class="stat-label">в очереди, ещё не спроектировано</span><span class="stat-count">20</span></div>
     <div class="stat-card"><span class="stat-label">решили не делать</span><span class="stat-count">10</span></div>
   </div>
-  <div class="stats-footnote">Всего задач в трекере разработки: 331.</div>
+  <div class="stats-footnote">Всего задач в трекере разработки: 333.</div>
 
   <div class="eyebrow">Блокирует прогресс</div>
   <h2 style="margin-top:0;">Нужно от тебя</h2>
@@ -357,9 +357,12 @@ h2 {
   <div class="block">
     <div class="block-top">
       <div class="block-name">Питание</div>
-      <div class="badge" style="color:var(--badge-planned-fg); background:var(--badge-planned-bg);">В очереди</div>
+      <div class="badge" style="color:var(--badge-progress-fg); background:var(--badge-progress-bg);">В работе</div>
     </div>
-    <div class="block-note">Рекомендации по питанию с учётом возраста малыша и типа вскармливания. Сделан первый технический кирпичик: точный расчёт возраста малыша по календарю (а не приблизительно) — чтобы подпись возраста на карточке малыша и подпись возрастного периода в «Питании» никогда не расходились между собой.</div>
+    <details class="block-more">
+      <summary class="block-note">Раздел «Питание» собран целиком: в приложении есть экран «Питание» с блоком «Питание сейчас» по возрасту малыша и типу вскармливания (окно «Подробнее», запись кормления, история кормлений) и страница «Полезно сейчас» с частыми ситуациями и обязательным медицинским предупреждением. В админке появились матрица 15 возрастных периодов × 3 типа вскармливания и редакторы ситуаций, анонсов и текста предупреждения — контент можно наполнять самим, без программиста. Пока контент не заполнен, раздел…</summary>
+      <div class="block-note block-more-rest">показывает только то, что есть. Осталось: наполнить контент и прислать иллюстрации (миска, луна, капля и главная картинка раздела) — сейчас вместо них значки.</div>
+    </details>
   </div>
   <div class="block">
     <div class="block-top">
@@ -443,6 +446,7 @@ h2 {
   <div class="eyebrow">История обновлений</div>
   <h2 style="margin-top:0;">Что нового</h2>
   <ul class="changelog">
+    <li><span class="cl-date">2026-11-09</span><div>Готов раздел «Питание». В приложении: экран с рекомендациями по возрасту малыша и типу вскармливания, окно «Подробнее», быстрая запись кормления и история кормлений, страница «Полезно сейчас» с частыми ситуациями и медицинским предупреждением. В админке: матрица периодов и типов вскармливания и редакторы ситуаций, анонсов и предупреждения — контент наполняешь ты сама. Нужны от тебя иллюстрации: миска, луна, капля и главная картинка раздела.</div></li>
     <li><span class="cl-date">2026-11-09</span><div>Перенесли автоматические проверки кода на бесплатные серверы GitHub и убрали отдельный сервер, на котором они работали: проверки стали быстрее (около 10 минут вместо 40) и больше не упираются в лимиты. Обновление приложения по-прежнему выходит только после того, как все проверки прошли успешно. Для пользователей ничего не меняется.</div></li>
     <li><span class="cl-date">2026-11-09</span><div>Подготовили ускорение обновлений: если такой же код уже прошёл все проверки в рабочей ветке, после слияния в основную версию повторять тесты не придётся и обновление дойдёт до приложения быстрее. Пока функция выключена и включится отдельным шагом после дополнительной проверки. Для пользователей ничего не меняется.</div></li>
     <li><span class="cl-date">2026-11-08</span><details>
